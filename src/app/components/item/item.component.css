@@ -1,0 +1,43 @@
+.item {
+  width: 500px;
+  height: 150px;
+  box-shadow: 2px 2px 5px rgba(92, 92, 92, 0.8);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border-radius: 8px;
+  place-items: center;
+}
+
+.item_completed {
+  background-color: #ccc;
+}
+
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+
+span {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  grid-column: 2 / span 3;
+}
+
+button {
+  grid-column: span 2;
+  background-color: rgb(236, 67, 67);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 7px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+label:nth-child(odd) {
+  font-weight: bold;
+}

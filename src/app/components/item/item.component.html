@@ -1,0 +1,21 @@
+<div class="item" [ngClass]="{ item_completed: item.completed }">
+  <input type="checkbox" [checked]="item.completed" (change)="onToggle(item)" />
+
+  <span class="item-name">
+    <label>{{ item.name | uppercase }}</label>
+  </span>
+  <label>Precio:</label>
+  <label>
+    {{ item.price | currency }}
+  </label>
+  <label>Cantidad:</label>
+  <label>
+    {{ item.quantity }}
+  </label>
+  <label>Total:</label>
+  <label>
+    {{ item.price * item.quantity | currency }}
+  </label>
+
+  <button (click)="onDelete(item)" class="remove-name">Eliminar</button>
+</div>
