@@ -32,4 +32,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Enter on `/shopping-list-server` and then execute `npm start`
 
-Server runs on port 3000
+Server runs on `port 3000`
